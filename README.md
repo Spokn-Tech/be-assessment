@@ -13,25 +13,25 @@ Goal
 
 ## Requirements
 
-Head to Google Cloud platform and subscribe for a free account to allow you to make the following:
-Start your own K8s cluster with High availability, do the initial setup to expose the following services over public IPs.
-Install the following:
-Influx DB inside the cluster
-Cassandra DB using statefulsets
-Build microservice(s) that:
-Scrapes the information of value of All currencies every second from (https://prices.org/) and send the information to Google Pub sub, this is using Google functions or any other way you like
-Pulls prices from Google PubSub and write it to influx as measurements that allow you to sketch a graph of historical prices
-Front-end that show a day view of the past 24 prices
-expose the front-end on a public IP and push the code to Github repo.
+#### Head to Google Cloud platform and subscribe for a free account to allow you to make the following:
+1. Start your own K8s cluster with High availability, do the initial setup to expose the following services over public IPs.
+2. Install the following:
+    1. Influx DB inside the cluster
+    2. Cassandra DB using statefulsets
+3. Build microservice(s) that:
+   1. Scrapes the information of value of All currencies every second from (https://prices.org/) and send the information to Google Pub sub, this is using Google functions or any other way you like
+   2. Pulls prices from Google PubSub and write it to influx as measurements that allow you to sketch a graph of historical prices
+   3. Front-end that show a day view of the past 24 prices
+4. expose the front-end on a public IP and push the code to Github repo.
 
 
 ## Specification
 
-Use any Node.js framework you want or no framework at all, it's up to you. Usually we use Express.js ‑ feel free to use this one, if you don't have any preferred one.
-Don't bother with any graphics, just simple HTML, simple form, no CSS needed. Or just use Twitter Bootstrap.
-Be careful with Consumer-producer problems that could happen when have a massive writes into Influx
-Cover code with unit tests.
-Don’t over engineer things :)
+1. Use any Node.js framework you want or no framework at all, it's up to you. Usually we use Express.js ‑ feel free to use this one, if you don't have any preferred one.
+2. Don't bother with any graphics, just simple HTML, simple form, no CSS needed. Or just use Twitter Bootstrap.
+3. Be careful with Consumer-producer problems that could happen when have a massive writes into Influx
+4. Cover code with unit tests.
+5. Don’t over engineer things :)
 
 ## Quality requirements
 
