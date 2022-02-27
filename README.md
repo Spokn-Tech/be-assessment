@@ -1,4 +1,4 @@
-# Senior Backend developer assignment
+# Backend developer assignment
 
 
 This document contains description and requirements for assignment for Backend developer positions on Spokn.
